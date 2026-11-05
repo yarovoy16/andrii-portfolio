@@ -1,0 +1,6 @@
+---
+import Layout from '../../../layouts/Layout.astro';import {projects} from '../../../data/projects';
+export function getStaticPaths(){return ['ru','en'].map(lang=>({params:{lang}}))}
+const {lang}=Astro.params;const ru=lang==='ru';
+---
+<Layout lang={lang} title={ru?'Проекты':'Projects'} description={ru?'Реализованные цифровые продукты Andrii Yarovyi':'Digital products built by Andrii Yarovyi'} section="projects"><div class="eyebrow">PORTFOLIO / SELECTED WORK</div><h1>{ru?'Мои проекты':'My projects'}<span class="dot">.</span></h1><p class="lead">{ru?'Реальные инструменты, созданные для практических задач.':'Real tools built to solve practical problems.'}</p><div class="project-grid catalog">{projects.filter(p=>p.public).map(p=><article class="project-card"><a class:list={['project-image',{'full-screenshot':p.id==='china-together'||p.id==='crm-china-tour'}]} href={`/${lang}/projects/${p.id}/`}><img src={'/assets/projects/'+p.image} alt={p.name} width="1200" height="700"/><span class="image-arrow">↗</span></a><div class="card-body"><h2>{p.name}</h2><p>{p[lang].short}</p><div class="tags">{p.tags.map(tag=><span>{tag}</span>)}</div><a class="detail" href={`/${lang}/projects/${p.id}/`}>{ru?'Подробнее':'View project'} ↗</a></div></article>)}</div></Layout>

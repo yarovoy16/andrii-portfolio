@@ -14,7 +14,7 @@ section:not(.hero){margin-top:78px}h2{font-size:30px;font-weight:500;line-height
 .telegram-link{align-self:auto}
 @media(max-width:650px){.contact-methods{align-items:flex-start}}
 
-.hero-actions{max-width:620px}.hero-actions .button{white-space:nowrap}.hero-actions .hero-email{gap:8px;padding-block:12px}.mail-icon{width:18px;height:18px;flex:none}@media(max-width:600px){.hero-actions{display:grid;grid-template-columns:minmax(0,1fr) max-content 46px;gap:8px;align-items:center}.hero-actions .button{white-space:normal;gap:8px;font-size:11px;padding-inline:10px}.hero-actions .hero-email{white-space:nowrap}}
+.hero-actions{max-width:620px}.hero-actions .button{white-space:nowrap}.hero-actions .primary{gap:8px;padding-inline:14px}.hero-actions .hero-email{gap:8px;padding-block:12px}.mail-icon{width:18px;height:18px;flex:none}@media(max-width:600px){.hero-actions{display:grid;grid-template-columns:minmax(0,max-content) max-content 46px;gap:8px;align-items:center;justify-content:start}.hero-actions .button{white-space:normal;gap:8px;font-size:11px;padding-inline:10px}.hero-actions .hero-email{white-space:nowrap}}
 
 .hero-actions .telegram-link{white-space:nowrap;align-self:center}
 

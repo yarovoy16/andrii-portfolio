@@ -25,4 +25,4 @@ section:not(.hero){margin-top:78px}h2{font-size:30px;font-weight:500;line-height
 .project-image.full-screenshot img{object-fit:contain;object-position:center;border-radius:4px}
 
 /* Reduce stacked gutters around project cards on phones. */
-@media(max-width:600px){main{padding-inline:16px}.project-card .project-image{padding-inline:8px}.project-card .card-body{padding:16px 12px}}
+@media(max-width:600px){main{padding-inline:16px}.project-grid{margin-inline:-16px}.project-card .project-image{padding-inline:8px}.project-card .card-body{padding:16px 12px}}
